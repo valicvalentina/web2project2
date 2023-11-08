@@ -5,6 +5,9 @@
   "main": "index.js",
   "scripts": {
     "build": "npm run clean; npm run copy-views; npm run copy-views",
+    "clean": "rm -rf dist",
+    "copy-views": "cp -r src/views/ dist/views/",
+    "start": "node dist/express.js", 
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
