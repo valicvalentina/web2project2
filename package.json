@@ -4,6 +4,7 @@
   "description": "lab2 for web2",
   "main": "index.js",
   "scripts": {
+    "build": "npm run clean; npm run copy-views; npm run copy-views",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
