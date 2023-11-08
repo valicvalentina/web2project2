@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Home</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      text-align: center;
+      width: 600px;
+      padding: 40px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    h1 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      color: #007bff; 
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    li {
+      background-color: #007bff; 
+      color: #fff;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      padding: 20px;
+    }
+
+    li a {
+      text-decoration: none;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Choose a Vulnerability</h1>
+    <ul>
+      <li><a href="/xss">XSS (Cross-site Scripting)</a></li>
+      <li><a href="/login">Loša kontrola pristupa (Broken Access Control)</a></li>
+    </ul>
+  </div>
+</body>
+</html>

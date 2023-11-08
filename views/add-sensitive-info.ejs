@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Sensitive Info</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 70px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px; /* Increase padding for larger background */
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+
+        button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 30px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Add Sensitive Info</h2>
+        <form action="/add-sensitive-info" method="post">
+            <div class="form-group">
+                <label for="creditCardNumber">Credit Card Number:</label>
+                <input type="text" name="creditCardNumber" id="creditCardNumber" required>
+            </div>
+
+            <div class="form-group">
+                <label for="bankAccount">Bank Account:</label>
+                <input type="text" name="bankAccount" id="bankAccount" required>
+            </div>
+
+            <div class="form-group">
+                <label for="homeAddress">Home Address:</label>
+                <input type="text" name="homeAddress" id="homeAddress" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phoneNumber">Phone Number:</label>
+                <input type="tel" name="phoneNumber" id="phoneNumber" required>
+            </div>
+
+            <button type="submit">Add Sensitive Info</button>
+        </form>
+    </div>
+</body>
+</html>

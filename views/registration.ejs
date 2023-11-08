@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Registration</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    h1 {
+      color: #333;
+    }
+    form {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+    label {
+      display: block;
+      text-align: left;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    input, select {
+      width: 100%;
+      padding: 10px;
+      margin: 5px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Registration</h1>
+  <form method="post" action="/register">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" placeholder="Enter your username" required>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" placeholder="Enter a strong password" required>
+
+    <!-- <label for="role">Role:</label>
+    <select id="role" name="role" required>
+      <option value="user">User</option>
+      <option value="admin">Admin</option>
+    </select> -->
+    <div class="form-group">
+        <label for="enablePoorAccessControl" style="text-align: center;">Enable Poor Access Control:</label>
+        <input type="checkbox" id="enablePoorAccessControl" name="enablePoorAccessControl">
+      </div>
+    <button type="submit">Register</button>
+  </form>
+</body>
+</html>

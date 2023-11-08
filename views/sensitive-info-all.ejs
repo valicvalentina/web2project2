@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>User Sensitive Info</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      text-align: center;
+      width: 600px;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      overflow-y: auto; 
+      max-height: 80vh;
+    }
+
+    h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      color: #007bff; 
+    }
+
+    h3 {
+      font-size: 20px;
+      margin-top: 20px;
+    }
+
+    .user-info {
+      border: 1px solid #ccc;
+      padding: 20px;
+      margin: 20px 0;
+      background-color: #f9f9f9; 
+    }
+
+    h4 {
+      font-size: 18px;
+      margin-bottom: 10px;
+      color: #555; 
+    }
+
+    p {
+      font-size: 16px;
+      color: #333; 
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>User Sensitive Info</h2>
+    <% allSensitiveInfo.forEach((info) => { %>
+      <div class="user-info">
+        <h3>User ID: <%= info.userId %></h3>
+        <div class="financial-data">
+          <h4>Financial Data</h4>
+          <p>Credit Card Number: <%= info.financialData.creditCardNumber %></p>
+          <p>Bank Account: <%= info.financialData.bankAccount %></p>
+        </div>
+        <div class="contact-info">
+          <h4>Contact Info</h4>
+          <p>Home Address: <%= info.contactInfo.homeAddress %></p>
+          <p>Email: <%= info.contactInfo.email %></p>
+          <p>Phone Number: <%= info.contactInfo.phoneNumber %></p>
+        </div>
+      </div>
+    <% }); %>
+  </div>
+</body>
+</html>
+

@@ -1,0 +1,42 @@
+{
+  "development": {
+    "username": "baza_jnx3_user",
+    "password": "hISgqvT4fgoEAL7ZpWASewrGJtfw1mWt",
+    "database": "baza_jnx3",
+    "host": "dpg-cktb4j0168ec73ceo4ng-a.frankfurt-postgres.render.com",
+    "dialect": "postgres",
+    "port": 5432,
+    "ssl": {
+      "require": true, 
+      "rejectUnauthorized": false
+    }
+  },  
+  "test": {
+    "username": "baza_jnx3_user",
+    "password": "hISgqvT4fgoEAL7ZpWASewrGJtfw1mWt",
+    "database": "baza_jnx3",
+    "host": "dpg-cktb4j0168ec73ceo4ng-a.frankfurt-postgres.render.com",
+    "dialect": "postgres",
+    "port": 5432,
+    "ssl": {
+      "require": true, 
+      "rejectUnauthorized": false
+    }
+  },
+  "production": {
+    "ssl":true,
+    "dialectOptions":{
+    "ssl": {
+      "require": true, 
+      "rejectUnauthorized": false
+    }
+  },
+    "username": "baza_jnx3_user",
+    "password": "hISgqvT4fgoEAL7ZpWASewrGJtfw1mWt",
+    "database": "baza_jnx3",
+    "host": "dpg-cktb4j0168ec73ceo4ng-a.frankfurt-postgres.render.com",
+    "dialect": "postgres",
+    "port": 5432
+  }
+}
+
