@@ -1,8 +1,8 @@
 const { Sequelize } = require('sequelize');
-const config = require('./config.json'); // Import your Sequelize configuration
+const config = require('./config.json'); 
 
 const sequelize = new Sequelize(
-  config.development, // Replace with the appropriate environment (e.g., development, test, production)
+  config.development, 
 );
 
 async function testConnection() {
@@ -14,5 +14,5 @@ async function testConnection() {
   }
 }
 
-// Call the testConnection function to test the connection
+
 testConnection();

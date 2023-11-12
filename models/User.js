@@ -1,5 +1,3 @@
-// models/User.js
-
 const { Sequelize, DataTypes } = require('sequelize');
 const sequelize = require('./sequelize');
 const User = sequelize.define('User', {
