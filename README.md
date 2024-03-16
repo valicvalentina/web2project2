@@ -1,3 +1,8 @@
+Projekt je razvijen u sklopu kolegija Napredni Razvoj Programske Potpore za Web na Fakultetu elektrotehnike i računarstva.
+
+The project was developed as part of the Advanced Web Software Development course at the Faculty of Electrical Engineering and Computing
+
+
 Potrebno je izraditi web-aplikaciju koja će omogućiti potencijalnom napadaču korištenje dvije različite tehnike sigurnosnih napada, odnosno dvije ranjivosti web-aplikacija, iz dolje navedenih kategorija.
 
 Za svaku je potrebno implementirati:
