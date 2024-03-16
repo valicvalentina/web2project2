@@ -19,6 +19,7 @@ napadi se mogu pokrenuti kroz sučelje web-aplikacije
 učinak napada bude vidljiv u korisničkom sučelju (npr. prikladnim ispisom niza izvršenih akcija, ispisom izmijenjenog sadržaja baze podataka, prikazom javascript:alert standardnog dijaloga s podacima o korisničkoj sjednici document.cookie itd.).
 
 ==================================
+
 Popis implementiranih ranjivosti:
 
 1. Cross-site scripting (XSS) 
@@ -47,6 +48,7 @@ attacks can be initiated through the web application interface
 the impact of the attack is visible in the user interface (e.g., by displaying a suitable list of executed actions, displaying modified database content, showing a javascript:alert standard dialog with user session data document.cookie, etc.).
 
 ==================================
+
 List of implemented vulnerabilities:
 
 1. Cross-site scripting (XSS)
